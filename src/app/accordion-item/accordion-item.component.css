@@ -1,0 +1,36 @@
+:host {
+  --border-thickness: 2px;
+  display: block;
+  border-radius: 0.5rem;
+  background: linear-gradient(135deg, #ca009e, #a321bd);
+  padding: var(--border-thickness);
+  margin: 0.25rem 0;
+  min-width: 100%;
+  overflow: hidden;
+}
+
+.header {
+  padding: 1rem;
+  cursor: pointer;
+  background: #333;
+  border-radius: 0.5rem;
+  color: white;
+  min-width: 100%;
+}
+
+.header:hover {
+  background: #555;
+}
+
+.header:active {
+  background: #666;
+}
+
+.content {
+  padding: 1rem;
+  padding-top: calc(1rem - var(--border-thickness));
+  margin: 1rem;
+  border-radius: 1rem;
+  background: #fafafa;
+  color: black;
+}

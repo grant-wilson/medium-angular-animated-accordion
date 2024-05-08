@@ -1,0 +1,8 @@
+<div class="header" (click)="toggle()">
+  <ng-content select="[app-accordion-item-header]"></ng-content>
+</div>
+@if (expanded()) {
+  <div class="content">
+    <ng-content select="[app-accordion-item-content]"></ng-content>
+  </div>
+}
